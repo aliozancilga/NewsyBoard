@@ -12,13 +12,7 @@ struct NewsModel: Decodable {
     let status: String?
     let totalResults: Int?
     let articles : [Articles]
-    
-//    init(status:String,totalResults:Int, articles:Articles) {
-//        self.status = status
-//        self.totalResults = totalResults
-//        self.articles = [articles]
-//    }
-    
+
 }
 
 struct Articles: Decodable {
@@ -29,29 +23,12 @@ struct Articles: Decodable {
     let url : String?
     let urlToImage : String?
     let publishedAt : String?
-    
-//    init(source: Source, author: String, title: String, description:String, url: String, urlToImage:String, publishedAt: String) {
-//        self.source = source
-//        self.author = author
-//        self.title  = title
-//        self.description = description
-//        self.url = url
-//        self.urlToImage = urlToImage
-//        self.publishedAt = publishedAt
-//    }
-    
+ 
 }
 
 struct Source: Decodable{
     let id : String?
     let name: String?
-    
-    
-//    init(id: String,name:String) {
-//        self.id = id
-//        self.name = name
-//    }
-
     
 }
 
