@@ -12,7 +12,7 @@ struct NewsModel: Decodable {
     let status: String?
     let totalResults: Int?
     let articles : [Articles]
-
+ 
 }
 
 struct Articles: Decodable {
@@ -23,12 +23,14 @@ struct Articles: Decodable {
     let url : String?
     let urlToImage : String?
     let publishedAt : String?
+    
  
 }
 
 struct Source: Decodable{
     let id : String?
     let name: String?
+ 
     
 }
 

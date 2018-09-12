@@ -24,8 +24,6 @@ class NetworkServices {
     
     func getData(completion: @escaping (Any) -> Void ) {
         
- 
-        
         guard let URL = URL(string: base_url )else{ return }
         
         let session = URLSession.shared

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FA45EE6621455D0400F10450 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE6521455D0400F10450 /* NewsListViewController.swift */; };
+		FA7E4CE52145EBC000A06A00 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E4CE42145EBC000A06A00 /* NewsDetailViewController.swift */; };
+		FA93FDF4214986D1001F17D9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA93FDF3214986D1001F17D9 /* Launch Screen.storyboard */; };
+		FA93FDF72149A0D4001F17D9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDF62149A0D4001F17D9 /* Extensions.swift */; };
 		FAB15D202143EFEA004B1697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */; };
 		FAB15D252143EFEA004B1697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB15D232143EFEA004B1697 /* Main.storyboard */; };
 		FAB15D282143EFEA004B1697 /* NewsyBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAB15D262143EFEA004B1697 /* NewsyBoard.xcdatamodeld */; };
@@ -38,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		FA45EE6521455D0400F10450 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		FA7E4CE42145EBC000A06A00 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
+		FA93FDF3214986D1001F17D9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FA93FDF62149A0D4001F17D9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FAB15D1C2143EFEA004B1697 /* NewsyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB15D242143EFEA004B1697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA93FDF52149A0B0001F17D9 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA93FDF62149A0D4001F17D9 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		FAB15D132143EFEA004B1697 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 		FAB15D1E2143EFEA004B1697 /* NewsyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				FA93FDF52149A0B0001F17D9 /* Helpers */,
 				FAB15D552143FC05004B1697 /* Services */,
 				FAB15D522143F8BC004B1697 /* View */,
 				FAB15D512143F8B2004B1697 /* Controller */,
@@ -112,6 +127,7 @@
 				FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */,
 				FAB15D2E2143EFED004B1697 /* Info.plist */,
 				FAB15D262143EFEA004B1697 /* NewsyBoard.xcdatamodeld */,
+				FA93FDF3214986D1001F17D9 /* Launch Screen.storyboard */,
 			);
 			path = NewsyBoard;
 			sourceTree = "<group>";
@@ -146,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				FA45EE6521455D0400F10450 /* NewsListViewController.swift */,
+				FA7E4CE42145EBC000A06A00 /* NewsDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA93FDF4214986D1001F17D9 /* Launch Screen.storyboard in Resources */,
 				FAB15D2A2143EFED004B1697 /* Assets.xcassets in Resources */,
 				FAB15D252143EFEA004B1697 /* Main.storyboard in Resources */,
 			);
@@ -299,6 +317,8 @@
 				FAB15D59214402ED004B1697 /* NewsModel.swift in Sources */,
 				FAB15D572143FC4A004B1697 /* NetworkServices.swift in Sources */,
 				FA45EE6621455D0400F10450 /* NewsListViewController.swift in Sources */,
+				FA93FDF72149A0D4001F17D9 /* Extensions.swift in Sources */,
+				FA7E4CE52145EBC000A06A00 /* NewsDetailViewController.swift in Sources */,
 				FAB15D282143EFEA004B1697 /* NewsyBoard.xcdatamodeld in Sources */,
 				FAB15D542143F95C004B1697 /* NewsCell.swift in Sources */,
 				FAB15D202143EFEA004B1697 /* AppDelegate.swift in Sources */,
