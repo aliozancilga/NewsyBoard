@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		FA45EE6621455D0400F10450 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45EE6521455D0400F10450 /* NewsListViewController.swift */; };
 		FA7E4CE52145EBC000A06A00 /* NewsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E4CE42145EBC000A06A00 /* NewsDetailViewController.swift */; };
-		FA93FDF4214986D1001F17D9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA93FDF3214986D1001F17D9 /* Launch Screen.storyboard */; };
+		FA93FDF4214986D1001F17D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA93FDF3214986D1001F17D9 /* LaunchScreen.storyboard */; };
 		FA93FDF72149A0D4001F17D9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDF62149A0D4001F17D9 /* Extensions.swift */; };
+		FA93FDF92149D11F001F17D9 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDF82149D11F001F17D9 /* DesignableView.swift */; };
 		FAB15D202143EFEA004B1697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */; };
 		FAB15D252143EFEA004B1697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB15D232143EFEA004B1697 /* Main.storyboard */; };
 		FAB15D282143EFEA004B1697 /* NewsyBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAB15D262143EFEA004B1697 /* NewsyBoard.xcdatamodeld */; };
@@ -42,8 +43,9 @@
 /* Begin PBXFileReference section */
 		FA45EE6521455D0400F10450 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
 		FA7E4CE42145EBC000A06A00 /* NewsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailViewController.swift; sourceTree = "<group>"; };
-		FA93FDF3214986D1001F17D9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		FA93FDF3214986D1001F17D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA93FDF62149A0D4001F17D9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA93FDF82149D11F001F17D9 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		FAB15D1C2143EFEA004B1697 /* NewsyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB15D242143EFEA004B1697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				FA93FDF62149A0D4001F17D9 /* Extensions.swift */,
+				FA93FDF82149D11F001F17D9 /* DesignableView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -120,14 +123,14 @@
 				FA93FDF52149A0B0001F17D9 /* Helpers */,
 				FAB15D552143FC05004B1697 /* Services */,
 				FAB15D522143F8BC004B1697 /* View */,
-				FAB15D512143F8B2004B1697 /* Controller */,
 				FAB15D502143F8AB004B1697 /* Model */,
+				FAB15D512143F8B2004B1697 /* Controller */,
 				FAB15D232143EFEA004B1697 /* Main.storyboard */,
 				FAB15D292143EFED004B1697 /* Assets.xcassets */,
 				FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */,
+				FA93FDF3214986D1001F17D9 /* LaunchScreen.storyboard */,
 				FAB15D2E2143EFED004B1697 /* Info.plist */,
 				FAB15D262143EFEA004B1697 /* NewsyBoard.xcdatamodeld */,
-				FA93FDF3214986D1001F17D9 /* Launch Screen.storyboard */,
 			);
 			path = NewsyBoard;
 			sourceTree = "<group>";
@@ -287,7 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA93FDF4214986D1001F17D9 /* Launch Screen.storyboard in Resources */,
+				FA93FDF4214986D1001F17D9 /* LaunchScreen.storyboard in Resources */,
 				FAB15D2A2143EFED004B1697 /* Assets.xcassets in Resources */,
 				FAB15D252143EFEA004B1697 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +325,7 @@
 				FAB15D282143EFEA004B1697 /* NewsyBoard.xcdatamodeld in Sources */,
 				FAB15D542143F95C004B1697 /* NewsCell.swift in Sources */,
 				FAB15D202143EFEA004B1697 /* AppDelegate.swift in Sources */,
+				FA93FDF92149D11F001F17D9 /* DesignableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

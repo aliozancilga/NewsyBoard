@@ -12,9 +12,10 @@ let imageCache = NSCache<AnyObject, AnyObject>()
 
 extension UIImageView {
     func loadImageWithCache(link:String, contentMode: UIViewContentMode) {
-        
+        self.image = nil
         if let cacheImage = imageCache.object(forKey: link as AnyObject) {
             self.image = cacheImage as? UIImage
+            
             return
         }
         
@@ -24,7 +25,7 @@ extension UIImageView {
                 guard let downloadImage = UIImage(data: data!)  else { return }
                     
                 imageCache.setObject(downloadImage, forKey: link as AnyObject)
-                    
+                
                     self.image = downloadImage
                     
             }

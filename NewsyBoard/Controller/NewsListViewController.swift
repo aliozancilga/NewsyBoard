@@ -7,9 +7,11 @@
 //
 
 import UIKit
-import SafariServices
+
 class NewsListViewController: UITableViewController {
-    
+    fileprivate let Cell = "cell"
+    fileprivate let detailSegue = "detailnews"
+
     var newsData = [Articles]()
     
     @IBOutlet var tableview: UITableView!
@@ -24,6 +26,7 @@ class NewsListViewController: UITableViewController {
                 let decoder = JSONDecoder()
                 let json = try decoder.decode(NewsModel.self, from: data as! Data )
                 self.newsData = json.articles
+                
                 DispatchQueue.main.async {
                     self.tableview.reloadData()
                 }
@@ -33,8 +36,7 @@ class NewsListViewController: UITableViewController {
          }
       }
     
-
-}
+    }
 extension NewsListViewController{
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -42,14 +44,14 @@ extension NewsListViewController{
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = self.tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NewsCell
+         let cell = self.tableview.dequeueReusableCell(withIdentifier: self.Cell, for: indexPath) as! NewsCell
             cell.setupUI(news: self.newsData[indexPath.row])
             return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       let send = newsData[indexPath.row]
-         performSegue(withIdentifier: "detailnews", sender: send)
+         performSegue(withIdentifier: self.detailSegue, sender: send)
      }
     
     // MARK: - Navigation
@@ -59,6 +61,5 @@ extension NewsListViewController{
         destination.fullmodel = fornews
         
     }
-    
     
 }
