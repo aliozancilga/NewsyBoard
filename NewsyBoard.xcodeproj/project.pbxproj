@@ -12,6 +12,7 @@
 		FA93FDF4214986D1001F17D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA93FDF3214986D1001F17D9 /* LaunchScreen.storyboard */; };
 		FA93FDF72149A0D4001F17D9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDF62149A0D4001F17D9 /* Extensions.swift */; };
 		FA93FDF92149D11F001F17D9 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93FDF82149D11F001F17D9 /* DesignableView.swift */; };
+		FA9B85FD214D31E400ABB6A4 /* SourcesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9B85FC214D31E400ABB6A4 /* SourcesModel.swift */; };
 		FAB15D202143EFEA004B1697 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */; };
 		FAB15D252143EFEA004B1697 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB15D232143EFEA004B1697 /* Main.storyboard */; };
 		FAB15D282143EFEA004B1697 /* NewsyBoard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAB15D262143EFEA004B1697 /* NewsyBoard.xcdatamodeld */; };
@@ -49,6 +50,7 @@
 		FA93FDF3214986D1001F17D9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA93FDF62149A0D4001F17D9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA93FDF82149D11F001F17D9 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		FA9B85FC214D31E400ABB6A4 /* SourcesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesModel.swift; sourceTree = "<group>"; };
 		FAB15D1C2143EFEA004B1697 /* NewsyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAB15D1F2143EFEA004B1697 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAB15D242143EFEA004B1697 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				FAB15D58214402ED004B1697 /* NewsModel.swift */,
+				FA9B85FC214D31E400ABB6A4 /* SourcesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 			files = (
 				FAB15D59214402ED004B1697 /* NewsModel.swift in Sources */,
 				FAB15D572143FC4A004B1697 /* NetworkServices.swift in Sources */,
+				FA9B85FD214D31E400ABB6A4 /* SourcesModel.swift in Sources */,
 				FA45EE6621455D0400F10450 /* NewsListViewController.swift in Sources */,
 				FA93FDF72149A0D4001F17D9 /* Extensions.swift in Sources */,
 				FA7E4CE52145EBC000A06A00 /* NewsDetailViewController.swift in Sources */,

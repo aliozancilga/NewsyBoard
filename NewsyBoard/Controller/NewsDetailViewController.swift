@@ -12,7 +12,7 @@ import SafariServices
 class NewsDetailViewController: UIViewController , SFSafariViewControllerDelegate {
     
      var fullmodel : Articles!
-    var readerAvailable : Bool? = nil
+    private var readerAvailable : Bool? = nil
     
     @IBOutlet weak var newsImage: UIImageView!
     @IBOutlet weak var newsTitle: UILabel!
@@ -27,8 +27,8 @@ class NewsDetailViewController: UIViewController , SFSafariViewControllerDelegat
         guard let newsyTitle = fullmodel.source.name else { return }
         navigationController?.navigationItem.title = newsyTitle
  
-        guard let imageUrl = fullmodel.urlToImage else {return}
-       newsImage.loadImageWithCache(link: imageUrl, contentMode: .scaleAspectFit)
+        guard let imageUrl = fullmodel.urlToImage else { return}
+        newsImage.loadImageWithCache(link: imageUrl, contentMode: .scaleAspectFit)
         descriptionN.text = fullmodel.description
         newsTitle.text = fullmodel.title
         publishAt.text = fullmodel.publishedAt
@@ -49,7 +49,7 @@ class NewsDetailViewController: UIViewController , SFSafariViewControllerDelegat
          openSafari()
         
     }
-    func openSafari(){
+    private func openSafari(){
         guard let url = fullmodel.url else { return }
         
     if #available(iOS 11.0, *) {

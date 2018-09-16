@@ -20,13 +20,19 @@ class NewsCell: UITableViewCell {
     
     func setupUI(news: Articles) {
         
-        guard let imageURL = news.urlToImage else { return }
-        self.urlToImage.loadImageWithCache(link: imageURL, contentMode: .scaleAspectFit)
-        
+        if news.urlToImage != nil {
+            
+            guard let imageURL = news.urlToImage else { return }
+            
+            self.urlToImage.loadImageWithCache(link: imageURL, contentMode: .scaleAspectFit)
 
-        self.source.text = news.source.name
-        self.title.text = news.title
-        self.publishAt.text = news.publishedAt
+        }else{
+            
+            return }
+        
+       self.source.text = news.source.name
+       self.title.text = news.title
+       self.publishAt.text = news.publishedAt
         
     func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

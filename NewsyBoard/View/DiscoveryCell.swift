@@ -9,5 +9,15 @@
 import UIKit
 
 class DiscoveryCell: UICollectionViewCell {
+    @IBOutlet weak var sourceImage: UIImageView!
+   
+ 
+    
+    func discoveryUI(_ discovery: Sources) {
+   
+        guard let name = discovery.id else { return }
+        
+        self.sourceImage.getSource(values: name, contentMode: .scaleAspectFit)
+    }
     
 }

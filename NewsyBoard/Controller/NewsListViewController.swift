@@ -18,6 +18,7 @@ class NewsListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          fetch()
+        
      }
     
     func fetch(){
